@@ -13,7 +13,7 @@ link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remot
 Now open command pallete and choose `Dev Containers: Reopen in container`
 
 ### Building and Entering from Terminal
-```powershell
+```
 PS C:\Users\ns> cd py-test
 PS C:\Users\ns\py-test> docker build -t test .
 ...
@@ -29,11 +29,11 @@ hello
 
 ### Removing the Image After Use
 listing images
-```powershell
+```
 PS C:\Users\ns> docker images
 REPOSITORY  TAG        IMAGE ID       CREATED         SIZE
 test        latest     45770c96f941   3 minutes ago   156MB
 ...
 
-PS C:\Users\ns> docker rmi <IMAGE ID>/<REPOSITORY>
+PS C:\Users\ns> docker rmi <IMAGE ID/REPOSITORY>
 ```
